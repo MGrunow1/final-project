@@ -1,0 +1,57 @@
+/* Import from Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(240, 255, 239);
+    font-family: 'Mulish', sans-serif;
+}
+/* nav bar is inside header */
+header {
+    /* center */
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    /* rounded border */
+    border: 2px solid rgb(31, 81, 31);
+    border-radius: 30px;
+    padding: 0px;
+    /* keep at top */
+    position: sticky;
+    top: 10px;
+    background-color: rgba(230, 255, 230, .95);
+}
+nav {
+    text-align: center;
+    /* center the nav bar in the header */
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 0px;
+}
+/* center all h1 headings */
+h1 {
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    margin: 0px 20px 120px 20px;
+}
+li a {
+    text-decoration: none;
+}
+/* class for logo image */
+.logo {
+    height: 56px;
+    width: 50px;
+    margin: 0px;
+    float: left;
+    /* move up to fit */
+    position: relative;
+    bottom: 20px;
+}

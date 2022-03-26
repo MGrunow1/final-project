@@ -1,19 +1,22 @@
 /* Import from Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@500&family=Zen+Maru+Gothic:wght@600&display=swap');
+ /* @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap'); */
 
 * {
     box-sizing: border-box;
 }
 body {
     background-color: rgb(240, 255, 239);
-    font-family: 'Mulish', sans-serif;
+    /* font-family: 'Mulish', sans-serif; */
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 /* nav bar is inside header */
 header {
     /* center */
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    margin-bottom: 22px;
     /* rounded border */
     border: 2px solid rgb(31, 81, 31);
     border-radius: 30px;
@@ -30,13 +33,25 @@ nav {
     margin-right: auto;
     width: fit-content;
     padding: 0px;
+    /* set the font */
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+}
+footer {
+        /* center */
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        text-align: center;
 }
 /* center all h1 headings */
 h1 {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 nav ul {
     list-style-type: none;
+    margin: 6px;
 }
 li {
     display: inline;
@@ -53,19 +68,23 @@ li a {
     float: left;
     /* move up to fit */
     position: relative;
-    bottom: 20px;
+    bottom: 13px;
+}
+/* class for hero image */
+.hero {
+    width: 100%;
 }
 /* Font Awesome icons */
 .fa-brands {
-    padding: 20px;
-    font-size: 100px;
-    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 90px;
+    width: 150px;
     text-align: center;
     text-decoration: none;
 }
 .fa-github-square {
-    background-color: blue;
-    color: white;
+    color: black;
 }
 
 

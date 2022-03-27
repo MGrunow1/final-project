@@ -1,13 +1,11 @@
 /* Import from Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:wght@500&family=Zen+Maru+Gothic:wght@600&display=swap');
- /* @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap'); */
 
 * {
     box-sizing: border-box;
 }
 body {
     background-color: rgb(240, 255, 239);
-    /* font-family: 'Mulish', sans-serif; */
     font-family: 'Zen Maru Gothic', sans-serif;
 }
 /* nav bar is inside header */
@@ -41,8 +39,10 @@ footer {
         /* center */
         margin-left: auto;
         margin-right: auto;
-        width: 70%;
+        width: 90%;
         text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
 }
 /* center all h1 headings */
 h1 {
@@ -72,19 +72,28 @@ li a {
 }
 /* class for hero image */
 .hero {
+    margin: 0px;
     width: 100%;
 }
 /* Font Awesome icons */
 .fa-brands {
-    padding: 15px;
-    margin: 10px;
-    font-size: 90px;
-    width: 150px;
+    margin: 10px 40px;
+    font-size: 70px;
     text-align: center;
     text-decoration: none;
+    /* distinguish from background */
+    background-color: rgb(250, 250, 250);
+    border-radius: 6px;
 }
+/* give brand colors to their logos */
 .fa-github-square {
-    color: black;
+    color: rgb(36,41,47);
+}
+.fa-facebook-square {
+    color: rgb(59,89,152);
+}
+.fa-linkedin {
+    color: rgb(10,102,194);
 }
 
 

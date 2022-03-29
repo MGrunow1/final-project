@@ -7,6 +7,7 @@
 body {
     background-color: rgb(240, 255, 239);
     font-family: 'Zen Maru Gothic', sans-serif;
+    /* background-image: url("../img/001.JPG"); */
 }
 /* nav bar is inside header */
 header {
@@ -36,13 +37,13 @@ nav {
     font-size: 22px;
 }
 footer {
-        /* center */
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
+        width: 100%;
         text-align: center;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 20px;
+        color: white;
+        background-image: url("../img/field1.jpg");
+        background-position: bottom;
 }
 /* center all h1 headings */
 h1 {
@@ -60,6 +61,29 @@ li {
 li a {
     text-decoration: none;
 }
+/* styling for contact form */
+input {
+    display: block;
+    width: 100%;
+    background-color: rgb(240, 255, 239);
+}
+textarea {
+    width: 100%;
+    background-color: rgb(240, 255, 239);
+    resize: vertical;
+}
+button {
+    background-color: rgb(176, 207, 255); /* match logo background */
+    padding: 7px;
+    border-radius: 5px;
+    /* set the font */
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+}
+button:hover {
+    background-color: rgb(102, 153, 230);
+    color: white;
+}
 /* class for logo image */
 .logo {
     height: 56px;
@@ -70,11 +94,13 @@ li a {
     position: relative;
     bottom: 13px;
 }
+
 /* class for hero image */
 .hero {
     margin: 0px;
     width: 100%;
 }
+/* container for contact form */
 .contact {
     background-color: rgb(68, 120, 33); /* match tree logo */
     color: white;
@@ -84,32 +110,19 @@ li a {
     padding: 15px;
     border-radius: 11px;
 }
-input {
-    display: block;
-    width: 100%;
-    background-color: rgb(240, 255, 239);
+/* put first and last name side-by-side in contact form */
+.name-fields {
+    width: 50%;
+    float: left;
+    margin-bottom: 16px;
 }
-textarea {
-    width: 100%;
-    background-color: rgb(240, 255, 239);
-}
-button {
-    background-color: rgb(176, 207, 255); /* match logo background */
-    padding: 7px;
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    /* set the font */
-    font-family: 'Oswald', sans-serif;
-    font-size: 19px;
-}
-button:hover {
-    background-color: rgb(102, 153, 230);
-    color: white;
+.name-block::after {
+    clear: left;
 }
 /* Font Awesome icons */
 .fa-brands {
     margin: 10px 40px;
+    padding: 0px 4px;
     font-size: 70px;
     text-align: center;
     text-decoration: none;

@@ -100,11 +100,35 @@ button:hover {
     position: relative;
     bottom: 13px;
 }
-
+/* class for columns */
+.column {
+    float: left;
+    width: 50%;
+    padding: 20px;
+}
+.row {
+    width: 100%;
+}
+.row::after {
+    clear: both;
+}
 /* class for hero image */
 .hero {
     margin: 0px;
     width: 100%;
+}
+/* class for small images that enlarge on hover */
+.small-pic {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin: 10px;
+    transition: 1s;
+}
+.small-pic:hover {
+    width: 320px;
+    height: 240px;
+    transition: 1s;
 }
 /* container for contact form */
 .contact {
@@ -147,4 +171,9 @@ button:hover {
     color: rgb(10,102,194);
 }
 
-
+.photo-text {
+    padding: 5px;
+}
+.photo-text::after {
+    clear: left;
+}

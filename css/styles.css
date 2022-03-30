@@ -7,7 +7,6 @@
 body {
     background-color: rgb(240, 255, 239);
     font-family: 'Zen Maru Gothic', sans-serif;
-    /* background-image: url("../img/001.JPG"); */
 }
 /* nav bar is inside header */
 header {
@@ -42,14 +41,21 @@ footer {
         font-family: 'Poppins', sans-serif;
         font-size: 20px;
         color: white;
-        background-image: url("../img/field1.jpg");
-        background-position: bottom;
+        background-image: url("../img/geese.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+}
+section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 /* center all h1 headings */
 h1 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
+/* styling for nav bar components */
 nav ul {
     list-style-type: none;
     margin: 6px;

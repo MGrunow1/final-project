@@ -115,8 +115,11 @@ button:hover {
 .row-break {
     clear: both;
 }
-.bordered {
-    border: 1px solid rgb(31, 81, 31);
+.border-left {
+    border-left: 1px dashed rgb(31, 81, 31);
+}
+.border-top {
+    border-top: 1px dashed rgb(31, 81, 31);
 }
 /* class for hero image */
 .hero {

@@ -109,8 +109,14 @@ button:hover {
 .row {
     width: 100%;
 }
+.row::after {
+    clear: both;
+}
 .row-break {
     clear: both;
+}
+.bordered {
+    border: 1px solid rgb(31, 81, 31);
 }
 /* class for hero image */
 .hero {
@@ -164,7 +170,7 @@ button:hover {
 .fa-linkedin {
     color: rgb(10,102,194);
 }
-
+/* text for next to photos on home page */
 .photo-text {
     padding: 5px;
 }

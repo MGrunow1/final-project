@@ -109,7 +109,7 @@ button:hover {
 .row {
     width: 100%;
 }
-.row::after {
+.row-break {
     clear: both;
 }
 /* class for hero image */
@@ -119,16 +119,10 @@ button:hover {
 }
 /* class for small images that enlarge on hover */
 .small-pic {
-    width: 200px;
-    height: 150px;
-    float: left;
-    margin: 10px;
-    transition: 1s;
-}
-.small-pic:hover {
     width: 320px;
     height: 240px;
-    transition: 1s;
+    float: left;
+    margin: 10px;
 }
 /* container for contact form */
 .contact {

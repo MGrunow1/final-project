@@ -133,6 +133,12 @@ button:hover {
     float: left;
     margin: 10px;
 }
+.medium-pic {
+    margin-left: auto;
+    margin-right: auto;
+    width: 640px;
+    height: 480px;
+}
 /* container for contact form */
 .contact {
     background-color: rgb(68, 120, 33); /* match tree logo */
@@ -173,7 +179,7 @@ button:hover {
 .fa-linkedin {
     color: rgb(10,102,194);
 }
-/* text for next to photos on home page */
+/* text that goes next to photos on home page */
 .photo-text {
     padding: 5px;
 }

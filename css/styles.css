@@ -67,6 +67,11 @@ li {
 li a {
     text-decoration: none;
 }
+/* make audio controls more visible against background */
+audio {
+    border: 2px solid rgb(31, 81, 31);
+    border-radius: 30px;
+}
 /* styling for contact form */
 input {
     display: block;
@@ -116,10 +121,10 @@ button:hover {
     clear: both;
 }
 .border-left {
-    border-left: 1px dashed rgb(31, 81, 31);
+    border-left: 2px dashed rgb(31, 81, 31);
 }
 .border-top {
-    border-top: 1px dashed rgb(31, 81, 31);
+    border-top: 2px dashed rgb(31, 81, 31);
 }
 /* class for hero image */
 .hero {
@@ -139,6 +144,7 @@ button:hover {
     width: 640px;
     height: 480px;
 }
+/* containers around embedded map */
 .map-frame {
     width: 100%;
 }

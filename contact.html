@@ -35,17 +35,18 @@
                 Contact Page
             </h1>
         </section>
-        <section class="row">
-            <div class="column">                
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d22731.058931942614!2d-122.10883234197591!3d37.68297289494404!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1648672758016!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="map-frame">
+            <div class="map">                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22731.058931942614!2d-122.11105699999999!3d37.690983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68a5c7910d4d3c5f!2sMeek%20Park!5e0!3m2!1sen!2sus!4v1648836620576!5m2!1sen!2sus" width="500" height="375" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="column">
+            <div class="column-narrow">
                <p>
                     Here is a Google map of the area near me. I am fortunate to live near the wide variety of parks in the San Francisco Bay area (zoom out to see the green spaces on the map).
                </p>
             </div>
         </section>
         <section class="row-break">
+            <!-- end the columns -->
             <hr>
         </section>
         <section>
@@ -53,7 +54,7 @@
                 Contact Form
             </h1>
             <p>
-                This contact form is not functional.
+                This contact form is not functional. It is just to show how a contact form could be set up, and is not connected to anything to actually message me. Clicking the button only seems to reload the page.
             </p>
         </section>
         <!-- contact form -->
@@ -89,8 +90,8 @@
                     <label for="message">
                         Message
                      </label>
-                    <textarea id="message" name="message" placeholder="Write message here">
-                    </textarea>
+                     <!-- textarea and closing tag are on one line to prevent pre-filling spaces into message -->
+                    <textarea id="message" name="message" placeholder="Write message here"></textarea>
                 </p>
                <button type="submit">
                    Click
@@ -98,6 +99,7 @@
             </form>
           </section>
           <section>
+              <!-- add a blank line before footer -->
             &NonBreakingSpace;
         </section>
     </main>

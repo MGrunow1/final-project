@@ -139,6 +139,19 @@ button:hover {
     width: 640px;
     height: 480px;
 }
+.map-frame {
+    width: 100%;
+}
+.map {
+    margin-bottom: 30px;
+    margin-left: 20%;
+    float: left;
+}
+.column-narrow {
+    float: left;
+    width: 20%;
+    padding: 20px;
+}
 /* container for contact form */
 .contact {
     background-color: rgb(68, 120, 33); /* match tree logo */

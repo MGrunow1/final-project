@@ -97,11 +97,11 @@ button:hover {
 }
 /* class for logo image */
 .logo {
-    height: 56px;
+    height: 58px;
     width: 50px;
     margin: 0px;
     float: left;
-    /* move up to fit */
+    /* move up to better position on nav bar */
     position: relative;
     bottom: 13px;
 }

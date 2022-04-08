@@ -106,7 +106,7 @@ button:hover {
     bottom: 13px;
 }
 /* class for columns */
-.column {
+.column, .column-audio {
     float: left;
     width: 50%;
     padding: 20px;
@@ -205,6 +205,14 @@ button:hover {
 .photo-text::after {
     clear: left;
 }
+@media screen and (max-width: 1024px) {
+    .small-pic {
+        width: 69%;
+        height: auto;
+        float: none;
+        clear: both;
+    }
+}
 @media screen and (max-width: 900px) {
     .map-frame {
         flex-direction: column;
@@ -215,11 +223,19 @@ button:hover {
         width: 80%;
     }
 }
-/* change display large pictures on small screens */
+/* change audio-player layout and large pictures on small screens */
 @media screen and (max-width: 740px) {
     .medium-pic {
         width: 100%;
         height: auto;
+    }
+    .column-audio {
+        float: none;
+        clear: both;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 0px;
     }
 }
 /* change display of header and footer on small screens */

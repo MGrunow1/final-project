@@ -215,7 +215,14 @@ button:hover {
         width: 80%;
     }
 }
+/* change display of header and footer on small screens */
 @media screen and (max-width: 600px) {
+    /* allow links in nav bar to stack vertically */
+    li {
+        display: block;
+        margin: 0px;
+    }
+    /* reduce space between icons in footer */
     .fa-brands {
         margin: 10px;
     }

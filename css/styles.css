@@ -215,6 +215,13 @@ button:hover {
         width: 80%;
     }
 }
+/* change display large pictures on small screens */
+@media screen and (max-width: 740px) {
+    .medium-pic {
+        width: 100%;
+        height: auto;
+    }
+}
 /* change display of header and footer on small screens */
 @media screen and (max-width: 600px) {
     /* allow links in nav bar to stack vertically */

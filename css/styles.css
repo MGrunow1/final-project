@@ -106,7 +106,7 @@ button:hover {
     bottom: 13px;
 }
 /* class for columns */
-.column {
+.column, .column-audio {
     float: left;
     width: 50%;
     padding: 20px;
@@ -147,16 +147,16 @@ button:hover {
 /* containers around embedded map */
 .map-frame {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .map {
     margin-bottom: 30px;
-    margin-left: 20%;
-    float: left;
 }
 .column-narrow {
-    float: left;
     width: 20%;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /* container for contact form */
 .contact {
@@ -204,4 +204,50 @@ button:hover {
 }
 .photo-text::after {
     clear: left;
+}
+@media screen and (max-width: 1024px) {
+    .small-pic {
+        width: 69%;
+        height: auto;
+        float: none;
+        clear: both;
+    }
+}
+@media screen and (max-width: 900px) {
+    .map-frame {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .column-narrow {
+        width: 80%;
+    }
+}
+/* change audio-player layout and large pictures on small screens */
+@media screen and (max-width: 740px) {
+    .medium-pic {
+        width: 100%;
+        height: auto;
+    }
+    .column-audio {
+        float: none;
+        clear: both;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 0px;
+    }
+}
+/* change display of header and footer on small screens */
+@media screen and (max-width: 600px) {
+    /* allow links in nav bar to stack vertically */
+    li {
+        display: block;
+        margin: 0px;
+    }
+    /* reduce space between icons in footer */
+    .fa-brands {
+        margin: 10px;
+        font-size: 50px;
+    }
 }

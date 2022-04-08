@@ -147,16 +147,16 @@ button:hover {
 /* containers around embedded map */
 .map-frame {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .map {
     margin-bottom: 30px;
-    margin-left: 20%;
-    float: left;
 }
 .column-narrow {
-    float: left;
     width: 20%;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 /* container for contact form */
 .contact {
@@ -204,4 +204,19 @@ button:hover {
 }
 .photo-text::after {
     clear: left;
+}
+@media screen and (max-width: 900px) {
+    .map-frame {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .column-narrow {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .fa-brands {
+        margin: 10px;
+    }
 }
